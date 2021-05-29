@@ -8,14 +8,19 @@
     <title>Desafio 3</title>
 
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
         section {
             width: 300px;
             height: 200px;
             border: 1px solid black;
-            margin: 1% 10%;
+            margin: 2% 10% 0% 10%;
             display: inline-block;
             box-sizing: border-box;
         }
+
         /*España*/
         .espana {
             background-color: red;
@@ -26,20 +31,23 @@
             height: 40%;
             margin-top: 20%;
         }
+
         /*Dinamarca*/
         .dinamarca {
             background-color: red;
             position: relative;
         }
+
         .dinamarca-white-1 {
             width: 100%;
-            border-bottom: 20px solid white; 
+            border-bottom: 20px solid white;
             height: 45%;
             position: absolute;
             top: 0;
         }
+
         .dinamarca-white-2 {
-            border-right: 20px solid white; 
+            border-right: 20px solid white;
             height: 100%;
             position: absolute;
             top: 0;
@@ -76,28 +84,49 @@
         .japon {
             background-image: radial-gradient(circle, red 33%, white 33%, white);
         }
+        .contenedor{
+            display: inline-block;
+            margin-right: 20%;
+        }
+
+        p {
+            position: relative;
+            left: 10%;
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
 
+<div class="contenedor">
     <section class="espana">
         <div class="espana-yellow"></div>
     </section>
+    <p>España</p>
+</div>
 
+
+<div class="contenedor">
     <section class="dinamarca">
         <div class="dinamarca-white-1"></div>
         <div class="dinamarca-white-2"></div>
     </section>
-
+    <p>Dinamarca</p>
+    </div>
+    <div class="contenedor">
     <section class="emiratos">
         <div class="emiratos-green"></div>
         <div class="emiratos-white"></div>
         <div class="emiratos-black"></div>
     </section>
+    <p>Emiratos</p>
+    </div>
 
+    <div class="contenedor">
     <section class="japon"></section>
-
+    <p>Japón</p>
+</div>
 
 </body>
 
